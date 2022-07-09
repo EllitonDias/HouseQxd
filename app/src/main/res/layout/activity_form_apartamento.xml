@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_marginBottom="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.FormApartamento">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/titulo_form" />
+
+    <EditText
+        android:id="@+id/edt_nome"
+        style="@style/add_info"
+        android:layout_marginTop="15dp"
+        android:hint="Endereço"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/edt_lugar"
+        style="@style/add_info"
+        android:hint="Localização"
+        android:inputType="textCapWords" />
+    <EditText
+        android:id="@+id/edt_valor"
+        style="@style/add_info"
+        android:hint="valor"
+        android:maxLength="9"
+        android:inputType="numberDecimal" />
+    <EditText
+        android:id="@+id/edt_numero"
+        style="@style/add_info"
+        android:maxLength="15"
+        android:hint="Numero de telefone"
+        android:inputType="phone"/>
+    <EditText
+        android:id="@+id/edt_qtd"
+        style="@style/add_info"
+        android:maxLength="2"
+        android:hint="Quantidade de cômodos"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/edt_numApt"
+        style="@style/add_info"
+        android:maxLength="6"
+        android:hint="Número do ap"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/edt_acess"
+        style="@style/add_info"
+        android:hint="@string/acessibilidade"
+        android:textSize="14sp"
+        android:inputType="textCapWords"/>
+    <EditText
+        android:id="@+id/edt_end_onibus"
+        style="@style/add_info"
+        android:hint="@string/endonibus"
+        android:textSize="14sp"
+        android:inputType="textCapWords"/>
+    <EditText
+        android:id="@+id/edt_dst_onibus"
+        style="@style/add_info"
+        android:hint="@string/dstonibus"
+        android:maxLength="9"
+        android:textSize="14sp"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/edt_sol"
+        style="@style/add_info"
+        android:hint="@string/solar"
+        android:textSize="14sp"
+        android:inputType="textCapWords"/>
+    <TextView
+        android:id="@+id/txt_garagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/garagem"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/gsim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:checked="true"
+            android:backgroundTint="@color/disponivel"
+            android:buttonTint="@color/disponivel"
+            android:foregroundTint="@color/disponivel"
+            android:text="@string/sim" />
+
+        <RadioButton
+            android:id="@+id/gnao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/indisponivel"
+            android:buttonTint="@color/indisponivel"
+            android:foregroundTint="@color/indisponivel"
+            android:text="@string/nao" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_mobilha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/mobilha"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mbsim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:checked="true"
+            android:backgroundTint="@color/disponivel"
+            android:buttonTint="@color/disponivel"
+            android:foregroundTint="@color/disponivel"
+            android:text="@string/sim" />
+
+        <RadioButton
+            android:id="@+id/mbnao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/indisponivel"
+            android:buttonTint="@color/indisponivel"
+            android:foregroundTint="@color/indisponivel"
+            android:text="@string/nao" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_iluminacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/iluminacao"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:checked="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ilum_sim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:checked="true"
+            android:backgroundTint="@color/disponivel"
+            android:buttonTint="@color/disponivel"
+            android:foregroundTint="@color/disponivel"
+            android:text="@string/sim" />
+
+        <RadioButton
+            android:id="@+id/ilum_nao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/indisponivel"
+            android:buttonTint="@color/indisponivel"
+            android:foregroundTint="@color/indisponivel"
+            android:text="@string/nao" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_inclusao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/inclusao"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/os_dois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:checked="true"
+            android:backgroundTint="@color/disponivel"
+            android:buttonTint="@color/disponivel"
+            android:foregroundTint="@color/disponivel"
+            android:text="@string/dois" />
+        <RadioButton
+            android:id="@+id/agua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#001657"
+            android:buttonTint="#001657"
+            android:foregroundTint="#001657"
+            android:text="@string/agua" />
+
+        <RadioButton
+            android:id="@+id/luz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/aguardando"
+            android:buttonTint="@color/aguardando"
+            android:foregroundTint="@color/aguardando"
+            android:text="@string/luz" />
+        <RadioButton
+            android:id="@+id/nao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/indisponivel"
+            android:buttonTint="@color/indisponivel"
+            android:foregroundTint="@color/indisponivel"
+            android:text="@string/nao" />
+
+    </RadioGroup>
+
+
+
+
+    <TextView
+        android:id="@+id/txt_ar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/ar"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/arsim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:checked="true"
+            android:backgroundTint="@color/disponivel"
+            android:buttonTint="@color/disponivel"
+            android:foregroundTint="@color/disponivel"
+            android:text="@string/sim" />
+
+        <RadioButton
+            android:id="@+id/arnao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/indisponivel"
+            android:buttonTint="@color/indisponivel"
+            android:foregroundTint="@color/indisponivel"
+            android:text="@string/nao" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/txt_situacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/situacao"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/disponivel"
+                style="@style/disponivel"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/disponivel"
+                android:buttonTint="@color/disponivel"
+                android:foregroundTint="@color/disponivel"
+                android:text="@string/disponivel" />
+
+            <RadioButton
+                android:id="@+id/aguardando"
+                style="@style/aguardando"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#EEFF00"
+                android:buttonTint="#C6D600"
+                android:foregroundTint="@color/aguardando"
+                android:text="@string/espera" />
+        </RadioGroup>
+    <TextView
+        android:id="@+id/txt_historico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/historico"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/baixo"
+            style="@style/disponivel"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/disponivel"
+            android:buttonTint="@color/disponivel"
+            android:foregroundTint="@color/disponivel"
+            android:text="@string/baixo" />
+
+        <RadioButton
+            android:id="@+id/medio"
+            style="@style/aguardando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EEFF00"
+            android:buttonTint="#C6D600"
+            android:layout_marginRight="20dp"
+            android:foregroundTint="@color/aguardando"
+            android:text="@string/medio" />
+
+        <RadioButton
+            android:id="@+id/alto"
+            style="@style/indisponivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/indisponivel"
+            android:buttonTint="@color/indisponivel"
+            android:foregroundTint="@color/indisponivel"
+            android:text="@string/alto" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/teal_200"
+            android:textColor="@color/black"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="15dp"
+            android:text="salvar" />
+        <Button
+            android:id="@+id/cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/teal_200"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:text="Cancelar" />
+    </LinearLayout>
+
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
