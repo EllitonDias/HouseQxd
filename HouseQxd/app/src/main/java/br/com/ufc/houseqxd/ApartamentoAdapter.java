@@ -4,20 +4,25 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import br.com.ufc.houseqxd.model.Apartamento;
 
 public class ApartamentoAdapter extends RecyclerView.Adapter<ApartamentoViewHolder> {
 
     private Context context;
-    private ArrayList<Apartamento> apartamentos;
+    private List<Apartamento> apartamentos;
     private RecyclerApClick recyclerApClick;
     private ApartamentoViewHolder apartamentoViewHolder;
     private int position;
 
-    public ApartamentoAdapter(Context context, ArrayList<Apartamento> apartamentos, RecyclerApClick recyclerApClick) {
+    public ApartamentoAdapter(Context context, List<Apartamento> apartamentos, RecyclerApClick recyclerApClick) {
         this.context = context;
         this.apartamentos = apartamentos;
         this.recyclerApClick = recyclerApClick;
@@ -43,7 +48,7 @@ public class ApartamentoAdapter extends RecyclerView.Adapter<ApartamentoViewHold
         int posicao = position;
         apartamentoViewHolder.nome.setText(ap.getNome());
         apartamentoViewHolder.lugar.setText(ap.getLugar());
-        apartamentoViewHolder.valor.setText(Double.toString(ap.getValor()));
+        apartamentoViewHolder.valor.setText(ap.getValor());
 
         apartamentoViewHolder.edit.setOnClickListener(new View.OnClickListener() {
             @Override

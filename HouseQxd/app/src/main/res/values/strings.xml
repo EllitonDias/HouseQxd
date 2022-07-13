@@ -1,5 +1,47 @@
 <resources>
     <string name="app_name">House Qxd</string>
+    <string name="titulo">House Qxd</string>
+    <string name="titulo_form">CADASTRO DO APARTAMENTO</string>
     <string name="btn_edit">Editar</string>
+    <string name="endereco">Endereço:</string>
+    <string name="localizacao">Localização:</string>
+    <string name="valor_aluguel">Valor do Aluguel:</string>
+    <string name="numero">Número:</string>
+    <string name="situacao">Situação:</string>
+    <string name="disponivel">Disponivel</string>
+    <string name="espera">Aguardando</string>
+    <string name="indisponivel">Indisponivel</string>
+    <string name="qtdCmd">Quantidade de cômodos:</string>
+    <string name="meu_ap">Meus apartamentos</string>
+    <string name="all_ap">Todos os apartamentos</string>
+    <string name="voltar">Meus apartamentos</string>
+    <string name="data">Data do aluguel:</string>
+    <string name="num_ap">Número do Ap:</string>
+    <string name="mobilha">Possui alguma mobília?</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="iluminacao">Possui iluminação pública?</string>
+    <string name="ar">Possui ar condicionado?</string>
+    <string name="inclusao">Inclusão água ou luz?</string>
+    <string name="agua">Água</string>
+    <string name="luz">Luz</string>
+    <string name="garagem">Possui garagem?</string>
+    <string name="acessibilidade">Possui acessibilidade? <span>(Inclusão de elevadores, rampas…)</span></string>
+    <string name="alto">Alto</string>
+    <string name="medio">Médio</string>
+    <string name="baixo">Baixo</string>
+    <string name="historico">Nivel do histórico de incidências criminais no bairro</string>
+    <string name="solar">localização da frente do apartamento(nascente ou poente)?</string>
+    <string name="dstonibus">Rota de ônibus mais próxima em km</string>
+    <string name="endonibus">Endereço da parada de ônibus</string>
+    <string name="possui_acess">Possui acessibilidade:</string>
+    <string name="endonibusinfo">Endereço do ônibus mais próximo:</string>
+    <string name="rota">Distancia da rota mais próxima:</string>
+    <string name="Lf">Localização da frente do ap:</string>
+    <string name="dois">Os dois</string>
+    <string name="titulo_chat">Chat</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="msg_token_fmt">Nt</string>
+    <string name="default_notification_channel_id">default_notification_channel_id</string>
 
 </resources>

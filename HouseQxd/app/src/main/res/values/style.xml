@@ -5,6 +5,18 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">15dp</item>
         <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">16dp</item>
     </style>
+    <style name="disponivel">
+        <item name="android:textColor">@color/disponivel</item>
+    </style>
+    <style name="aguardando">
+        <item name="android:textColor">#CDAB00</item>
+    </style>
+    <style name="indisponivel">
+        <item name="android:tint">@color/indisponivel</item>
+        <item name="android:textColor">@color/indisponivel</item>
+    </style>
+
 
 </resources>
